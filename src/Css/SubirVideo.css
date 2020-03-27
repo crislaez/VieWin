@@ -1,0 +1,47 @@
+.divSubirVideo{
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    background: #0000004d;
+    color: #525252;
+
+}
+.divContenedorSubirVideo{
+    width: 40%;
+    height: 550px;
+    margin-top: 130px;
+    margin-left: 30%;
+    background: white;
+    border-radius: 5px;
+    
+}
+.divTituloSubitVideo{
+    width: 90%;
+    height: 70px;
+    float: left;
+}
+.divTituloSubitVideo h2{
+    text-align: center;
+    font-size: 30px;    
+    margin-top: 0.5em;
+    margin-left: 10%;
+}
+.divIconRegistroSubirVideos{
+    width: 5%;
+    height: 30px;
+    background: #FAFAFA;
+    color: white;
+    float: right;
+    margin-right: 2%;
+    margin-top: 0.5em;
+    border-radius: 50%;
+}
+.divIconRegistroSubirVideos button{
+    width: 100%;
+    height: 30px;
+    background: #FAFAFA;
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px black;
+    border: none;
+    cursor: pointer;
+}
