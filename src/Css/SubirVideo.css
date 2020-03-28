@@ -1,6 +1,6 @@
 .divSubirVideo{
     width: 100%;
-    height: 800px;
+    height: 850px;
     position: absolute;
     background: #0000004d;
     color: #525252;
@@ -44,4 +44,34 @@
     box-shadow: 3px 3px 3px black;
     border: none;
     cursor: pointer;
+}
+.formulario{
+    width: 90%;
+    height: 470px;
+    margin-left: 5%;
+    /* background: red; */
+    float: left;
+}
+.inputFormSubirFoto{
+    width: 80%;
+    height: 50px;
+    margin-left: 10%;
+    margin-top: 2em;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+.formulario input[type='submit']{
+    width: 70%;
+    height: 50px;
+    margin-left: 15%;
+    margin-top: 3em;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background:#21BDD0;
+    color: white;
+    transition: all 300ms;
+}
+.formulario input[type='submit']:hover{
+    background: #ACE3FC;
 }

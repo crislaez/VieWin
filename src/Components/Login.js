@@ -9,7 +9,7 @@ import firebase from 'firebase';
 
 class Login extends React.Component{
 
-    _isMounted = true;
+    _isMounted = false;
 
     constructor(props){
         super(props);
@@ -52,8 +52,6 @@ class Login extends React.Component{
                     error = false;
                     localStorage.setItem('usuario',this.state.arrayUsuarios[valor].nombre);
                     localStorage.setItem('primarykey',valor);                    
-                }else{
-                    error = true;
                 }
             }
 

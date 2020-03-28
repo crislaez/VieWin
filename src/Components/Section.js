@@ -12,7 +12,7 @@ import SubirVideo from './SubirVideo'
 
 class Section extends React.Component{
 
-    _isMounted = true;
+    _isMounted = false;
     _boolMenu = true;
     
     constructor(props){
@@ -21,7 +21,7 @@ class Section extends React.Component{
             {
                 mostrarLogin:false,
                 mostrarRegistro:false,
-                cambioVentana:'',
+                cambioVentana:'inicio',
                 ventanaSubirFoto:false,
             }
     }
@@ -91,6 +91,7 @@ class Section extends React.Component{
     }
 
     render(){
+        
         return(
             <section>
                 <Nav eventoSection={this.opcionesMenu}></Nav>
@@ -102,7 +103,7 @@ class Section extends React.Component{
                     :
                     this.state.cambioVentana == 'perfil'
                     ?
-                    <Perfil usuario={localStorage.getItem('usuario')} eventoAbrirVentana={this.abrirVentanaSubirFoto} eventoCerrarVentana={this.cerrarVentanaSubirFoto}></Perfil>
+                    <Perfil usuario={localStorage.getItem('usuario')} eventoAbrirVentana={this.abrirVentanaSubirFoto}></Perfil>
                     :
                     <div></div>
                 }

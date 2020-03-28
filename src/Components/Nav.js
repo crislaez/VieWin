@@ -19,10 +19,10 @@ class Nav extends React.Component{
         setInterval(() => {
             if(localStorage.getItem('usuario')){
                 this.setState({load:true})
-                console.log('Existe')
+                // console.log('Existe')
             }else{
                 this.setState({load:false})
-                console.log('No Existe')
+                // console.log('No Existe')
             }
         },500);
     }

@@ -10,7 +10,7 @@ import firebase from 'firebase';
 
 class Registro extends React.Component{
 
-    _isMount = true;
+    _isMount = false;
 
     constructor(props){
         super(props);
