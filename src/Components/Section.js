@@ -9,6 +9,7 @@ import Registro from './Registro'
 import Perfil from './Perfil'
 import Inicio from './Inicio'
 import SubirVideo from './SubirVideo'
+import Comentarios from './Comentarios'
 
 class Section extends React.Component{
 
@@ -29,6 +30,7 @@ class Section extends React.Component{
     componentDidMount(){
         this._isMounted = true;
     }
+    
     componentWillUnmount(){
         this._isMounted = false;
     }
@@ -49,6 +51,14 @@ class Section extends React.Component{
     
     abrirVentanaSubirFoto = () => {
         this.setState({ventanaSubirFoto:true})
+    }
+
+    abrirVentanaComentarios = () => {
+        this.setState({cambioVentana:'comentarios'})
+    }
+
+    cerrarVentanaComentarios = () => {
+        this.setState({cambioVentana:'inicio'})
     }
     
     opcionesMenu = (event) => {
@@ -99,11 +109,15 @@ class Section extends React.Component{
                 
                 {   this.state.cambioVentana == 'inicio'
                     ?
-                    <Inicio></Inicio>
+                    <Inicio eventoAbrirVentanaComentarios={this.abrirVentanaComentarios}></Inicio>
                     :
                     this.state.cambioVentana == 'perfil'
                     ?
                     <Perfil usuario={localStorage.getItem('usuario')} eventoAbrirVentana={this.abrirVentanaSubirFoto}></Perfil>
+                    :
+                    this.state.cambioVentana == 'comentarios'
+                    ?
+                    <Comentarios eventoCerrarVentana={this.cerrarVentanaComentarios}>COMENTARIOS</Comentarios>
                     :
                     <div></div>
                 }

@@ -9,7 +9,7 @@ class Perfil extends React.Component{
             <article className='articlePerfil'>
                 <div className='divTituloPerfil'>
                     <h2>Bienvenido {this.props.usuario}</h2>
-                    <input className='botonSubir' type='button' value='SUBIR FOTO' onClick={this.props.eventoAbrirVentana}></input>
+                    <input className='botonSubir' type='button' value='SUBIR VIDEO' onClick={this.props.eventoAbrirVentana}></input>
                 </div>
 
                 <div className='contenedorPerfil'>

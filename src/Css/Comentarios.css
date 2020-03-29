@@ -1,0 +1,84 @@
+.divContenedorComentarios{
+    width: 100%;
+    height: 850px;
+    background:#F9FBFC;
+    overflow-y: scroll;
+    float: left;
+}
+.divInputComentarios{
+    width: 100%;
+    height: 90px;
+    /* background: red;
+    position: fixed; */
+    float: left;
+}
+#bAtras{
+    width: 20%;
+    height: 50px;
+    margin-left: 40%;
+    border-radius: 5px;
+    margin-top: 20px;
+    background: #21BDD0;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+#bAtras:hover{
+    background: #ACE3FC;
+}
+.divVIdeo{
+    width: 80%;
+    height: 500px;
+    margin-left: 10%;
+    background: black;
+    border-radius: 10px;
+    border:1px solid grey;
+    float: left;
+}
+.divComentarios{
+    width: 80%;
+    height: 500px;
+    margin-left: 10%;
+    margin-top: 1em;
+    background: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* border:1px solid grey; */
+    float: left;
+}
+.divComentarios:hover{
+    overflow-y: scroll;
+}
+.divFormulario{
+    width: 80%;
+    height: 200px;
+    margin-left: 10%;
+    background: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 3em;
+    /* border:1px solid grey; */
+    float: left;
+}
+.divFormulario input[type='text']{
+    width: 70%;
+    height: 50px;
+    margin-left: 15%;
+    border: 1px solid grey;
+    margin-top: 2em;
+    border-radius: 5px;
+}
+.divFormulario input[type='submit']{
+    width: 60%;
+    height: 50px;
+    margin-left: 20%;
+    border: none;
+    background: #21BDD0;
+    margin-top: 2em;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.divFormulario input[type='submit']:hover{
+    background: #ACE3FC;
+}

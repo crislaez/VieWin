@@ -33,6 +33,17 @@ class Inicio extends React.Component{
         this._isMountd = false;
     }
 
+    handleClickDivVideo = (event) => {
+        // console.log(event.target.dataset.codigo1);
+        // console.log(event.target.dataset.codigo2);
+        // console.log(event.target.dataset.video);
+        localStorage.setItem('key',event.target.dataset.codigo1)
+        localStorage.setItem('key2',event.target.dataset.codigo2);
+        localStorage.setItem('rutavideo',event.target.dataset.video);
+        const eventoAbrirVentanaComentarios = this.props.eventoAbrirVentanaComentarios;
+        eventoAbrirVentanaComentarios();
+    }
+
     render(){
 
         const arrayVideos = [];
@@ -61,9 +72,9 @@ class Inicio extends React.Component{
                     ?
                     arrayVideos.map((data,key) => {
                         return(
-                            <div key={key} className='divContenedorVideos'>
-                                <video src={data.rutaVideo}></video>
-                                <h3>{data.mensaje}</h3>
+                            <div key={key} className='divContenedorVideos' onClick={this.handleClickDivVideo} data-codigo1={data.primerIndice} data-codigo2={data.segundoIndice} data-video={data.rutaVideo}>
+                                <video src={data.rutaVideo} controls data-codigo1={data.primerIndice} data-codigo2={data.segundoIndice} data-video={data.rutaVideo}></video>
+                                <h3 data-codigo1={data.primerIndice} data-codigo2={data.segundoIndice} data-video={data.rutaVideo}>{data.mensaje}</h3>
                             </div>
                         )
                     })
