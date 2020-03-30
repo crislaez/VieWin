@@ -29,6 +29,11 @@ class Section extends React.Component{
 
     componentDidMount(){
         this._isMounted = true;
+
+        //aqui llamamos a la uncion para que borre las variables
+        //que guardamos en el localstorage cuando se cierra el navegador
+        const removeLocalStorage = this.removeLocalStorage;
+        removeLocalStorage();
     }
     
     componentWillUnmount(){
@@ -98,6 +103,17 @@ class Section extends React.Component{
         else if(event.target.id == 'bPerfil'){
             this.setState({cambioVentana:'perfil'})
         }
+    }
+
+    //cuando se cierre el navegador, borramos las variables del localStorage
+    removeLocalStorage = () => {
+        window.addEventListener('unload',function(){
+            // localStorage.removeItem('key');
+            // localStorage.removeItem('key2');
+            // localStorage.removeItem('usuario');
+            // localStorage.removeItem('primarykey');
+            
+        })        
     }
 
     render(){

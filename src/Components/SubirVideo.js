@@ -51,6 +51,8 @@ class SubirVideo extends React.Component{
                 alert('Inserte un mensaje')
             }else{
                 let primarykey = localStorage.getItem('primarykey')
+                const bSubmit = document.querySelector('#bSubmit');
+                bSubmit.disabled = true;
 
                 const storage = firebase.storage().ref(`/imagenes/${this.state.video.name}`);
                 storage.put(this.state.video)
@@ -65,6 +67,8 @@ class SubirVideo extends React.Component{
 
                         firebase.database().ref(`${primarykey}/datos/${this.state.indiceDos}/`).set(datos);
 
+                        bSubmit.disabled = false;
+                        
                         this.setState({video:'',mensaje:''});                        
                     })
                 })      
@@ -95,7 +99,7 @@ class SubirVideo extends React.Component{
                         <input className='inputFormSubirFoto' type='text' onChange={(param) => {this.setState({mensaje:param.target.value})}} value={this.state.mensaje} placeholder='mensaje...'></input>
                         <br></br>
                         <br></br>
-                        <input type='submit' value='Subir'></input>
+                        <input id='bSubmit' type='submit' value='Subir'></input>
                     </form>
 
                 </div>

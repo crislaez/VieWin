@@ -51,11 +51,12 @@ class Inicio extends React.Component{
         this.state.arrayPrincipar.map((data,key) => {
             if(data.datos){
                 data.datos.map((d,k) => {
-                    let aux = d.video.split('?')
+                
                     let video = 
                         {
                             primerIndice:key,
                             segundoIndice:k,
+                            nombre:data.nombre,
                             mensaje:d.mensaje,
                             rutaVideo:d.video
                         }
@@ -63,7 +64,8 @@ class Inicio extends React.Component{
                 })
             }
         })
-        console.log(arrayVideos);
+        // console.log(arrayVideos);
+        //{data.rutaVideo}
 
         return(
             <article className='articleInicio'>
@@ -74,7 +76,8 @@ class Inicio extends React.Component{
                         return(
                             <div key={key} className='divContenedorVideos' onClick={this.handleClickDivVideo} data-codigo1={data.primerIndice} data-codigo2={data.segundoIndice} data-video={data.rutaVideo}>
                                 <video src={data.rutaVideo} controls data-codigo1={data.primerIndice} data-codigo2={data.segundoIndice} data-video={data.rutaVideo}></video>
-                                <h3 data-codigo1={data.primerIndice} data-codigo2={data.segundoIndice} data-video={data.rutaVideo}>{data.mensaje}</h3>
+                                <p data-codigo1={data.primerIndice} data-codigo2={data.segundoIndice} data-video={data.rutaVideo}>{data.nombre}</p>
+                                <p data-codigo1={data.primerIndice} data-codigo2={data.segundoIndice} data-video={data.rutaVideo}>{data.mensaje}</p>
                             </div>
                         )
                     })

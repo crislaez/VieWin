@@ -28,7 +28,9 @@
     margin-top: 1em;
     margin-left: 3%;
 }
-.divContenedorVideos h3{
-    margin-top: 1em;
+.divContenedorVideos p{
+    margin-top: 0.5em;
+    font-style: italic;
+    font-weight: bold;
     text-align: center;
 }
