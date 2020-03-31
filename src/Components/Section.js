@@ -96,6 +96,8 @@ class Section extends React.Component{
             if(confirmafion){
                 localStorage.removeItem('usuario');
                 localStorage.removeItem('primarykey');
+                localStorage.removeItem('key');
+                localStorage.removeItem('key2');
                 this.setState({cambioVentana:'inicio'});
             }
             
@@ -108,10 +110,10 @@ class Section extends React.Component{
     //cuando se cierre el navegador, borramos las variables del localStorage
     removeLocalStorage = () => {
         window.addEventListener('unload',function(){
-            // localStorage.removeItem('key');
-            // localStorage.removeItem('key2');
-            // localStorage.removeItem('usuario');
-            // localStorage.removeItem('primarykey');
+            localStorage.removeItem('key');
+            localStorage.removeItem('key2');
+            localStorage.removeItem('usuario');
+            localStorage.removeItem('primarykey');
             
         })        
     }

@@ -20,7 +20,7 @@
 }
 .contenedorPerfil{
     width: 100%;
-    height: 590px;
+    height: 769px;
     float: left;
 }
 .botonSubir{
@@ -37,5 +37,43 @@
     float: left;
 }
 .botonSubir:hover{
+    background: #ACE3FC;
+}
+.divVideoPefil{
+    width: 20%;
+    height: 300px;
+    border: 1px solid grey;
+    margin-left: 2.3%;
+    margin-top: 40px;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 3px 3px 3px grey;
+    float: left;
+}
+.divVideoPefil video{
+    width: 90%;
+    height: 200px;
+    background: black;
+    margin-top: 1em;
+    margin-left: 3%;
+}
+.divVideoPefil p{
+    margin-top: 0.5em;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+.divVideoPefil input[type='button']{
+    width: 50%;
+    margin-left: 25%;
+    background:#21BDD0;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 0.5em;
+    border:none;
+    height: 30px;
+}
+.divVideoPefil input[type='button']:hover{
     background: #ACE3FC;
 }

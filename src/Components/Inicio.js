@@ -3,6 +3,8 @@ import React from 'react'
 import '../Css/Inicio.css'
 //FIREBASE
 import firebase from 'firebase'
+//COMPONENTES
+import DivVideo from './DivVideo'
 
 class Inicio extends React.Component{
     
@@ -74,11 +76,7 @@ class Inicio extends React.Component{
                     ?
                     arrayVideos.map((data,key) => {
                         return(
-                            <div key={key} className='divContenedorVideos' onClick={this.handleClickDivVideo} data-codigo1={data.primerIndice} data-codigo2={data.segundoIndice} data-video={data.rutaVideo}>
-                                <video src={data.rutaVideo} controls data-codigo1={data.primerIndice} data-codigo2={data.segundoIndice} data-video={data.rutaVideo}></video>
-                                <p data-codigo1={data.primerIndice} data-codigo2={data.segundoIndice} data-video={data.rutaVideo}>{data.nombre}</p>
-                                <p data-codigo1={data.primerIndice} data-codigo2={data.segundoIndice} data-video={data.rutaVideo}>{data.mensaje}</p>
-                            </div>
+                            <DivVideo key={key} className='divContenedorVideos' handleClickDivVideo={this.handleClickDivVideo} primerIndice={data.primerIndice} segundoIndice={data.segundoIndice} rutaVideo={data.rutaVideo} nombre={data.nombre} mensaje={data.mensaje}></DivVideo>
                         )
                     })
                     :
