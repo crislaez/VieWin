@@ -30,7 +30,7 @@ class Nav extends React.Component{
     render(){
         return(
             <nav>
-                <button id='bMenuLateral' type='button' className='botones'  onClick={this.props.eventoSection}><FontAwesomeIcon icon={faBars}></FontAwesomeIcon></button>
+                <button id='bMenuLateral' type='button' className='botones'  onClick={this.props.eventoSection}><FontAwesomeIcon id='iMenu'  icon={faBars}></FontAwesomeIcon></button>
                 <input id='bInicio' type='button' className='botones' value='INICIO' onClick={this.props.eventoSection}></input>
                 {
                     this.state.load

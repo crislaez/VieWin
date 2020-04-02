@@ -67,11 +67,11 @@ class Section extends React.Component{
     }
     
     opcionesMenu = (event) => {
-        console.log(event.target.id)
-        if(event.target.id == 'bMenuLateral'){
+    
+        if(event.target.id == 'bMenuLateral' || event.target.id == 'iMenu'){
             let aside = document.getElementsByTagName('aside');
             if(this._boolMenu){
-                aside[0].style.width = '20%';
+                aside[0].style.width = '30%';
                 this._boolMenu = false;
             }else{
                 aside[0].style.width = '0%';
