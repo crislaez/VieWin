@@ -79,7 +79,7 @@ class Login extends React.Component{
                         <button onClick={this.props.eventoCerrarVentana}><FontAwesomeIcon icon={faTimes}></FontAwesomeIcon></button>
                     </div>
                     <form className='formLogin' onSubmit={this.handleSubmit}>
-                        <input className='bTexto' style={{marginTop:'5em'}} type='text' value={this.state.usuario} onChange={(param) => {this.setState({usuario:param.target.value})}} placeholder='usuario...'></input>
+                        <input className='bTexto' style={{marginTop:'3em'}} type='text' value={this.state.usuario} onChange={(param) => {this.setState({usuario:param.target.value})}} placeholder='usuario...'></input>
                         <br></br>
                         <input className='bTexto' type='password' value={this.state.clave} onChange={(param) => {this.setState({clave:param.target.value})}} placeholder='Clave...'></input>
                         <br></br>

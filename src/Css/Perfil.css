@@ -42,7 +42,7 @@
 .divVideoPefil{
     width: 20%;
     height: 300px;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
     margin-left: 2.3%;
     margin-top: 40px;
     border-radius: 5px;

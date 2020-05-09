@@ -57,15 +57,16 @@
     border-radius: 5px;
     border: 1px solid grey;
     font-size: 15px;
-    margin-top: 10px;
+    margin-top: 3em;
 }
 .formLogin input[type='submit']{
     width: 50%;
     height: 50px;
     margin-left: 25%;
-    margin-top: 2em;
+    margin-top: 4em;
     border-radius: 5px;
     background:#21BDD0;
+    border: none;
     color: white;
     cursor: pointer;
     /* transition: all 300ms; */
