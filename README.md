@@ -1,6 +1,6 @@
 ## (front-end) VIEWIN
 
-VIEWIN es una red social de subir videos
+VIEWIN es una red social para subir videos
 
 <img src="https://github.com/crislaez/VieWin/blob/master/src/img/foto_proyecto.PNG" />
 <hr>
@@ -8,9 +8,9 @@ VIEWIN es una red social de subir videos
 
 ### Que hace el proyecto
 
-VIEWIN es una red social para subir fotos y poder contar, otros usuarios tambien pueden comentar y dar su feedback (back-end hecho con firebase)
+VIEWIN es una red social para subir videos, otros usuarios tambien pueden comentar y dar su feedback (back-end hecho con firebase)
  
-### Donde puedne recibir ayuda los usuarios con el proyecto
+### Donde pueden recibir ayuda los usuarios con el proyecto
  
 Escribiendome a mi correo crislaez30@gmail.com
 
